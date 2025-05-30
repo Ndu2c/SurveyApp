@@ -82,7 +82,4 @@ The app will open automatically in your default browser, or open [http://localho
 package.json   - Project metadata and dependencies
 
 
-## Contributing
-
-looking forward to your response.
 
