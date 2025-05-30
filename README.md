@@ -2,14 +2,14 @@
 
 A simple, responsive survey application built with React and Tailwind CSS.
 
-## ✨ Features
+##  Features
 
-- ✅ Real-time form validation
-- 🎨 Clean, modern UI styled with Tailwind CSS
-- 📱 Fully responsive layout
-- ⚡ Instant feedback after form submission
+-  Real-time form validation
+-  Clean, modern UI styled with Tailwind CSS
+-  Fully responsive layout
+-  Instant feedback after form submission
 
-## 🚀 Getting Started
+##  Getting Started
 
 These instructions will help you set up the project locally for development and testing.
 
