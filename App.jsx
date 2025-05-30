@@ -105,29 +105,45 @@ export default function SurveyApp() {
   const [currentView, setCurrentView] = useState("survey");
 
   return (
-    <div className="min-h-screen bg-gray-100">
-      <nav className="bg-white shadow p-4">
-        <div className="container mx-auto flex justify-between items-center">
-          <h1 className="text-2xl font-bold">Survey Application</h1>
+  <div className="min-h-screen bg-gray-50">
+    {/* Navigation */}
+    <nav className="bg-white shadow-sm border-b">
+      <div className="max-w-6xl mx-auto px-4 py-3">
+        <div className="flex justify-between items-center">
+          <h1 className="text-lg font-medium text-gray-800">Surveys</h1>
           <div className="space-x-4">
             <button
-              onClick={() => setCurrentView("survey")}
-              className={\`py-1 px-4 rounded \${currentView === "survey" ? "bg-blue-600 text-white" : "bg-gray-200 text-gray-800"}\`}
+              onClick={() => setCurrentView('survey')}
+              className={`px-4 py-2 text-sm transition duration-200 ${
+                currentView === 'survey'
+                  ? 'text-blue-600 border-b-2 border-blue-600'
+                  : 'text-gray-600 hover:text-blue-600'
+              }`}
             >
-              Survey Form
+              FILL OUT SURVEY
             </button>
             <button
-              onClick={() => setCurrentView("results")}
-              className={\`py-1 px-4 rounded \${currentView === "results" ? "bg-blue-600 text-white" : "bg-gray-200 text-gray-800"}\`}
+              onClick={() => setCurrentView('results')}
+              className={`px-4 py-2 text-sm transition duration-200 ${
+                currentView === 'results'
+                  ? 'text-blue-600 border-b-2 border-blue-600'
+                  : 'text-gray-600 hover:text-blue-600'
+              }`}
             >
-              Survey Results
+              VIEW RESULTS
             </button>
           </div>
         </div>
-      </nav>
-      <main className="py-10 px-4">
-        {currentView === "survey" ? <SurveyForm /> : <SurveyResults />}
-      </main>
-    </div>
-  );
+      </div>
+    </nav>
+
+    {/* Main Content */}
+    <main className="py-8">
+      {currentView === 'survey' ? <SurveyForm /> : <SurveyResults />}
+    </main>
+  </div>
+);
+};
+
+export default SurveyApp;
 }
