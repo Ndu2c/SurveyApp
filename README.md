@@ -44,7 +44,7 @@ A React-based web application that allows users to complete surveys by providing
    npm start
    ```
 
-4. Open [http://localhost:3000](http://localhost:3000) to view the app.
+
 
 
 
